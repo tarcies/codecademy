@@ -22,11 +22,30 @@ function pAequorFactory(num, arr) {
     dna: arr,
     mutate() {
       const dnaToChange = Math.floor(Math.random() * this.dna.length); // Chose the base to mutate
+
       do {
         newDna = returnRandBase(); // Find a new DNA property
       } while (newDna !== this.dna[dnaToChange]) // Prevent reassignment of the same DNA property
 
       this.dna[dnaToChange] = newDna; // Reassign a random DNA base to a random base of the specimen
     },
+    compareDNA(compObj) {
+      let count = 0;
+
+      for (let i = 0; i < this.dna.length; i++) {
+        if (this.dna[i] === compObj.dna[i]) count++; // Adds 1 for every common DNA base in the same location
+      }
+
+      console.log(`Specimen #${this.specimenNum} and #${compObj.specimenNum} have ` + Math.floor((count / this.dna.length) * 100) + '% DNA in common.');
+    },
+    willLikelySurvive() {
+      cgCount = 0;
+
+      for(const dnaBase of this.dna) {
+        if (dnaBase === 'C' || dnaBase === 'G') cgCount++; // Adds 1 for every 'C' and 'G' DNA base found in the specimen's DNA strand
+      }
+
+      return (cgCount / this.dna.length) >= 0.6; // Returns true if 'C' and 'G' makes up at least 60% of the DNA strand's composition, returns false otherwise
+    }
   }
 }
