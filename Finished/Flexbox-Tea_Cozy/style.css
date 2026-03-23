@@ -1,0 +1,173 @@
+* {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    background-color: black;
+}
+
+header {
+    font-size: 22px;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    display: inline-flex;
+    width: 100%;
+    height: 69px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    height: 50px;
+    left: 10px;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 12px;
+}
+
+#navigation a {
+    text-decoration: underline;
+}
+
+#title {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 69px;
+    width: 100%;
+}
+
+#title #hero-img {
+    height: 700px;
+    width: 1200px;
+}
+
+#title #hero-text {
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 1;
+}
+
+#totm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    width: 1000px;
+}
+
+#totm h2, #totm h4 {
+    margin: 16px;
+}
+
+#totm h2 {
+    font-size: 34px;
+}
+
+#totm h4 {
+    font-size: 22px;
+}
+
+#totm section {
+    display: flex;
+    margin: 6px 12px;
+    flex-direction: column;
+}
+
+#totm p {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+#totm img {
+    width: 300px;
+    height: 200px;
+}
+
+#totm #categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#locations {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    top: 180px;
+    height: 500px;
+    width: 1200px;
+    overflow: hidden;
+    background-image: url(resources/locations-background.jpg);
+}
+
+#locations h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#locations h3, #locations p {
+    margin: 0;
+}
+
+#loc-section {
+    position: inherit;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    opacity: 1;
+}
+
+#loc-section section {
+    width: 300px;
+    background-color: black;
+    line-height: 50px;
+    padding: 20px 0;
+    opacity: 1;
+}
+
+footer {
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+}
+
+#copyright {
+    text-align: left;
+    margin-left: 20px;
+}
