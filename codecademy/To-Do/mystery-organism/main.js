@@ -13,7 +13,7 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
-function pAequorFactory(num, arr) {
+function pAequorFactory(num, arr = mockUpStrand()) {
   if (typeof num !== 'number' || num < 0) return 'Invalid number';
   if (arr.length !== 15) return 'Invalid array';
   
@@ -49,3 +49,14 @@ function pAequorFactory(num, arr) {
     }
   }
 }
+
+const pAequors = [];
+
+for (let i = 0; i < 30; i++) {
+  pAequors.push(pAequorFactory(i));
+}
+
+console.log(pAequors[4].willLikelySurvive());
+console.log(pAequors[5].willLikelySurvive());
+
+pAequors[4].compareDNA(pAequors[5]);
