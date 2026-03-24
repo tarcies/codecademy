@@ -34,3 +34,6 @@ Voice Commands:
 "Speak!"
 
 "Grasp Things!"
+
+"Dance!"
+
