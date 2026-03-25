@@ -2,7 +2,7 @@ Hamlet: Act 4, Scene 7
 
 Another room in the castle.
 
-Enter KING CLAUDIUS and LARRY
+Enter KING CLAUDIUS and LAERTES
 
 KING CLAUDIUS
 Now must your conscience my acquaintance seal,
@@ -11,7 +11,7 @@ Sith you have heard, and with a knowing ear,
 That he which hath your noble father slain
 Pursued my life.
 
-LARRY
+LAERTES
 It well appears: but tell me
 Why you proceeded not against these feats,
 So crimeful and so capital in nature,
@@ -36,7 +36,7 @@ Too slightly timber'd for so loud a wind,
 Would have reverted to my bow again,
 And not where I had aim'd them.
 
-LARRY
+LAERTES
 And so have I a noble father lost;
 A sister driven into desperate terms,
 Whose worth, if praises may go back again,

@@ -2,9 +2,9 @@ Hamlet: Act 1, Scene 3
 
 A room in Polonius' house.
 
-Enter LARRY and OPHELIA
+Enter LAERTES and OPHELIA
 
-LARRY
+LAERTES
 My necessaries are embark'd: farewell:
 And, sister, as the winds give benefit
 And convoy is assistant, do not sleep,
@@ -13,7 +13,7 @@ But let me hear from you.
 OPHELIA
 Do you doubt that?
 
-LARRY
+LAERTES
 For Hamlet and the trifling of his favour,
 Hold it a fashion and a toy in blood,
 A violet in the youth of primy nature,
