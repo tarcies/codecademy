@@ -13,6 +13,7 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
+// Factory function for creating pAequor objects
 function pAequorFactory(num, arr = mockUpStrand()) {
   if (typeof num !== 'number' || num < 0) return 'Invalid number';
   if (arr.length !== 15) return 'Invalid array';
