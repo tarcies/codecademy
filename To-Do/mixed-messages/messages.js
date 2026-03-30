@@ -23,6 +23,12 @@ const EXERCISES = [
 const REPS_MAX = 20;
 const SETS_MAX = 5;
 
-let excercise = EXERCISES[Math.floor(Math.random() * EXERCISES.length)];
-let reps = Math.floor(Math.random * REPS_MAX) + 1;
-let sets = Math.floor(Math.random * SETS_MAX) + 1;
+function generateMsg() {
+    let excercise = EXERCISES[Math.floor(Math.random() * EXERCISES.length)];
+    let reps = Math.floor(Math.random() * REPS_MAX) + 1;
+    let sets = Math.floor(Math.random() * SETS_MAX) + 1;
+
+    return `Do ${reps} rep${reps > 1 ? 's' : ''}, ${sets} set${sets > 1 ? 's' : ''} of ${excercise}`;
+}
+
+console.log(generateMsg());
